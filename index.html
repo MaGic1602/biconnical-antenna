@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biconical Antenna</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      #densityInputLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+      }
+      #densityInput {
+        position: absolute;
+        top: 10px;
+        left: 100px;
+      }
+
+      #poleLengthInputLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 40px;
+        left: 10px;
+      }
+      #poleLengthInput {
+        position: absolute;
+        top: 40px;
+        left: 100px;
+      }
+
+      #radiusInputLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+      }
+      #radiusInput {
+        position: absolute;
+        top: 70px;
+        left: 100px;
+      }
+      #heightinputLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+      }
+      #heightInput {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+      }
+      #antennaPositionXLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 130px;
+        left: 10px;
+      }
+      #antennaPositionXInput {
+        position: absolute;
+        top: 130px;
+        left: 100px;
+      }
+      #antennaPositionYLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 160px;
+        left: 10px;
+      }
+      #antennaPositionYInput {
+        position: absolute;
+        top: 160px;
+        left: 100px;
+      }
+      #antennaPositionZLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 190px;
+        left: 10px;
+      }
+      #antennaPositionZInput {
+        position: absolute;
+        top: 190px;
+        left: 100px;
+      }
+      #antennaFiLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 220px;
+        left: 10px;
+      }
+      #antennaFiInput {
+        position: absolute;
+        top: 220px;
+        left: 100px;
+      }
+      #antennaThetaLabel {
+        color: #00ff00;
+        font-weight: bold;
+        position: absolute;
+        top: 250px;
+        left: 10px;
+      }
+      #antennaThetaInput {
+        position: absolute;
+        top: 250px;
+        left: 100px;
+      }
+      #exportButton {
+        position: absolute;
+        top: 280px;
+        left: 100px;
+        width: 170px;
+      }
+      #jsonData{
+        position: absolute;
+        width: 80vw;
+        height: 300px;
+        overflow: auto;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        bottom: 20px;
+        background-color: black;
+        color: #00ff00;
+        padding: 20px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <label id="densityInputLabel">Density</label>
+    <input id="densityInput" type="number" />
+    <label id="radiusInputLabel">Radius</label>
+    <input id="radiusInput" type="number" />
+    <label id="heightinputLabel">Height</label>
+    <input id="heightInput" type="number" />
+    <label id="poleLengthInputLabel">Pole length</label>
+    <input id="poleLengthInput" type="number" />
+    <label id="antennaPositionXLabel">Position X</label>
+    <input id="antennaPositionXInput" type="number" />
+    <label id="antennaPositionYLabel">Position Y</label>
+    <input id="antennaPositionYInput" type="number" />
+    <label id="antennaPositionZLabel">Position Z</label>
+    <input id="antennaPositionZInput" type="number" />
+    <label id="antennaFiLabel">Fi</label>
+    <input id="antennaFiInput" type="number" />
+    <label id="antennaThetaLabel">Theta</label>
+    <input id="antennaThetaInput" type="number" />
+    <button id="exportButton">Export JSON</button>
+    <pre id="jsonData">Exported coordinates</pre>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
